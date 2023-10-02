@@ -10,10 +10,8 @@
 
 </script>
 <body>
-    <h1>Socket</h1>
+    <h1>Socket messages</h1>
 
-    <ul id="ul">
-        
-    </ul>
+    <ul id="ul"></ul>
 </body>
 </html>
