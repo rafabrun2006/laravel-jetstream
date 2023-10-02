@@ -1,5 +1,5 @@
 ## O que foi feito
-1. Fiz somente uma instalação simples, do laravel + jetstream, que já entrega um dashboard com controle de conta de usuário, e fiz alterações pontuais nas classes de evento do jetstream *App\Actions\Fortfy\CreateNewUser.php* e *App\Actions\Fortfy\UpdateUserProfileInformation.php*
+1. Fiz somente uma instalação simples, do laravel + jetstream, que já entrega um dashboard com controle de conta de usuário, e fiz alterações pontuais nas classes de evento do jetstream *App\Actions\Fortfy\CreateNewUser.php* e *App\Actions\Fortfy\UpdateUserProfileInformation.php* que chamam a WebsocketHelper para solicitar ao servidor socket a emissão da mensagem.
 
 2. Criei uma pagina bem simples, que acompanha os eventos emit do server socket, e mostra na página a mensagem emitida pelo server após uma modificação do perfil do usuário ou criação de uma nova conta.
 
