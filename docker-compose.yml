@@ -1,0 +1,26 @@
+version: "3"
+services:
+
+    laravel_jetstream:
+      container_name: laravel_jetstream
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - 100:8000
+        - 1215:1215
+        - 5173:5173
+      expose:
+        - 8000
+        - 1215
+        - 5173
+      working_dir: /var/www/html
+      volumes:
+        - .:/var/www/html:rw
+        - ./nginx/sites-available:/etc/nginx/sites-available
+      networks:
+        - laravel_jetstream_network
+
+networks:
+  laravel_jetstream_network:
+    name: laravel_jetstream_network
